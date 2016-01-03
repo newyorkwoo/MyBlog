@@ -9,9 +9,9 @@
     <link rel="apple-touch-icon" href="image/icon.png">
     <link rel="shortcut icon" href="image/favicon.png?v=2" type="image/png">
 
-    <title>Blog</title>
+    <title>JavaBlog</title>
     
-    <meta name="description" content="A simple blog built using Responsive.gs">
+    <meta name="description" content="A simple Steven's Java study journal">
 
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic|Varela+Round' rel='stylesheet'>
     <link href="css/style.min.css" rel="stylesheet">
@@ -20,17 +20,54 @@
     <![endif]-->
 </head>
 <body>
-	 <div class="container">
-        <div class="row gutters">
-            <div class="col span_6">
-            	<h3>Column 1</h3>
-                <p>Lorem ipsum dolor sit amet, consecterur adipisicing</p>
-            </div>
-            <div class="col span_6">
-            	<h3>Column 2</h3>
-                <p>Lorem ipsum dolor sit amet, consecterur adipisicing</p>
-            </div>
-         </div>
-      </div>
+	<header class="blog-header row">
+	 	<div class="container">
+        	<div class="row gutters">
+            	<div class="blog-name col span_9">
+            		<a href="/">Steven Blog</a>
+            	</div>
+            	<div class="blog-search col span_3">
+            		<div class="search-form">
+            			<form action=""><input class="input_full" type="search" placeholder="Search here...">
+            			</form>
+            		</div>
+            	</div>
+         	</div>
+      	</div>
+    </header>
+	<nav class="blog-menu row">
+		<div class="container">
+			<ul class="link-menu">
+				<li><a href="/">Home</a></li>
+				<li><a href="#">Archive</a></li>
+				<li><a href="#">Books</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+	<main class="blog-content row">
+		<div class="container">
+			<article class="post row">
+				<header class="post-header">
+					<h1 class="post-title">
+					<a href="#">Talking About Java</a>					
+					</h1>
+					<div class="post-meta">
+						<ul>
+							<li class="post-author">By Steven Wu</li>
+							<li class="post-date">on January, 3 2016</li>
+						</ul>
+					</div>					
+				</header>
+				<div class="post-summary">
+				<figure class="post-thumbnail">
+					<img src="image/wu.jpg" height="1508" width="2800" alt="">
+				</figure>
+				<p class="post-excerpt">我們在花蓮市星巴克...<a href="#">Read more....</a></p>
+				</div>
+			</article>
+		</div>
+	</main>
 </body>
 </html>
